@@ -1,0 +1,17 @@
+.card-movie {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-movies button {
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #fff;
+    padding: 5px;
+    color: #fff;
+}
+
+.card-movies img {
+    width: 50%;
+}
