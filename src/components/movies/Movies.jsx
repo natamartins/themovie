@@ -7,11 +7,11 @@ const Movies = ({ movie, selectMovie, }) => {
 
     return (
         <div className='card-movie' onClick={() => selectMovie(movie)}>
-            <div className='card-movies' key={movie.original_title}>
+            <div className='card-movies' key={movie.title}>
                 {
                     movie ? <img className='img-bg' src={`${IMG_PATH}${movie.poster_path}`} alt="" /> : <div><h2>IMG not found</h2></div>
                 }
-                <p>{movie.original_title}</p>
+                <p>{movie.title}</p>
             </div>
         </div>
     )

@@ -12,20 +12,36 @@ body {
 
 }
 
+img {
+    cursor: pointer;
+}
+
 .container-bg-headers {
     height: 600px;
-
+    margin-bottom: 90px;
 }
 
 .container {
+    width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.container button {
+    display: flex;
 }
 
 .nav-bar {
     display: flex;
     padding: 10px;
     justify-content: space-around;
+    margin-bottom: 130px;
+}
+
+.bg-home-list {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-bar ul {
@@ -37,12 +53,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10rem;
     padding: 10px;
 }
 
 .box-review div {
     width: 500px;
+}
+
+.box-review div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.box-review div p {
+    margin-bottom: 20px;
+}
+
+.box-review div button {
+    border-color: transparent;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.box-review div button:hover {
+    background-color: tomato;
+    color: #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
 
 .opacityImg {
@@ -59,6 +98,30 @@ body {
 
 
 .img-bg {
-    width: 20%;
+    width: 15%;
     border-radius: 15px;
+
+}
+
+.tex-movie {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(116, 116, 116);
+}
+
+.btn-more {
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 2px 15px;
+    border-radius: 15px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.btn-more:hover {
+    background-color: tomato;
+    color: #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
