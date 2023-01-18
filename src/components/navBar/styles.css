@@ -1,0 +1,18 @@
+.nav-bar {
+    padding-top: 50px;
+}
+
+.bg {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url('../../imgs//netflix-catalogo.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}

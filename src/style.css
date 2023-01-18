@@ -49,6 +49,15 @@ img {
     gap: 10px;
 }
 
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
 .box-review {
     display: flex;
     align-items: center;

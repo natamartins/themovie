@@ -4,6 +4,7 @@
     gap: 200px;
 }
 
+
 .bg-home {
 
     display: flex;
@@ -46,4 +47,14 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.opacityImg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: aqua;
 }

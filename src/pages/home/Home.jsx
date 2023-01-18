@@ -34,7 +34,7 @@ const Home = () => {
 
 
     const [movies, setMovies] = useState([])
-    // const [search, setSearch] = useState('')
+    const [search, setSearch] = useState('')
     const [select, setSelect] = useState({})
 
     const fetchMovies = async (search) => {
@@ -55,11 +55,11 @@ const Home = () => {
 
     }, [])
 
-    // const serhMvies = (e) => {
-    //   e.preventDefault()
-    //   fetchMovies(search)
+    const serhMvies = (e) => {
+        e.preventDefault()
+        fetchMovies(search)
 
-    // }
+    }
 
     const fetcVideo = async (id) => {
         const { data } = await axios.get(`${URL}/movie/${id}`, {
@@ -103,8 +103,8 @@ const Home = () => {
                     <div className='box-review'>
 
                         {/* {
-              select.videos ? renderVD() : null
-            } */}
+                       select.videos ? renderVD() : null
+                       } */}
                         <div>
                             <h1>{select.title}</h1>
                             <p>{select.overview ? select.overview : null}</p>
@@ -131,10 +131,10 @@ const Home = () => {
                 </div>
                 <h1 className='tex-movie'>Movies</h1>
                 <div className='bg-home-list'>
-                    {/* <form onSubmit={serhMvies}>
-            <input type="text" onChange={(e) => setSearch(e.target.value)} />
-            <button type={"submit"} >Search</button>
-          </form> */}
+                    <form onSubmit={serhMvies}>
+                        <input type="text" onChange={(e) => setSearch(e.target.value)} />
+                        <button type={"submit"} >Search</button>
+                    </form>
                     <div className='container'>
                         {
                             movies.map(movie => (
